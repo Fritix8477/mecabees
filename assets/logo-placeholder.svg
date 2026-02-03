@@ -1,0 +1,31 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img">
+  <defs>
+    <linearGradient id="g1" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#ffd977"/>
+      <stop offset="1" stop-color="#ffb13b"/>
+    </linearGradient>
+    <linearGradient id="g2" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#2b2d33"/>
+      <stop offset="1" stop-color="#0b0b0f"/>
+    </linearGradient>
+  </defs>
+  <rect x="40" y="40" width="432" height="432" rx="96" fill="url(#g1)"/>
+  <path d="M256 84l164 95v154l-164 95-164-95V179l164-95z" fill="#fff6d8" opacity="0.9"/>
+  <g fill="url(#g2)">
+    <circle cx="256" cy="208" r="56"/>
+    <rect x="214" y="248" width="84" height="160" rx="40"/>
+  </g>
+  <g fill="#fff">
+    <circle cx="236" cy="190" r="10"/>
+    <circle cx="276" cy="190" r="10"/>
+  </g>
+  <g stroke="#2b2d33" stroke-width="16" stroke-linecap="round">
+    <path d="M146 216c-40-34-66-40-96-42" fill="none"/>
+    <path d="M366 216c40-34 66-40 96-42" fill="none"/>
+  </g>
+  <g fill="#2b2d33">
+    <path d="M188 280h136v28H188z"/>
+    <path d="M188 330h136v28H188z"/>
+    <path d="M188 380h136v28H188z"/>
+  </g>
+</svg>
