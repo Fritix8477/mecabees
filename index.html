@@ -22,13 +22,16 @@
     <header class="site-header">
       <div class="container header-inner">
         <div class="brand">
-          <img class="brand-logo" src="assets/logo.png" alt="Logo MecaBees" />
+          <img class="brand-logo" src="assets/logo.png" alt="Logo MecaBees" width="56" height="56" fetchpriority="high" />
           <div>
             <p class="brand-kicker">FTC Team</p>
             <h1 class="brand-title">MecaBees</h1>
           </div>
         </div>
-        <nav class="nav">
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+          Menu
+        </button>
+        <nav id="site-nav" class="nav">
           <a href="#mission">Mission</a>
           <a href="#saison">Saison 2025/2026</a>
           <a href="#palmares">Palmarès</a>
@@ -44,10 +47,10 @@
         <div class="container hero-grid">
           <div class="hero-content">
             <p class="eyebrow">STI2D · First Tech Challenge</p>
-            <h2>Une ruche de talents qui construit, programme et gagne.</h2>
+            <h2>Une ruche de talents qui construit, programme et progresse.</h2>
             <p class="lead">
               MecaBees est l’équipe FTC du Lycée Charles Poncet à Cluse, portée par une classe de STI2D.
-              Chaque promotion prend le relais, construit son robot et vise les podiums.
+              Chaque promotion prend le relais, construit son robot et vise le meilleur niveau possible.
             </p>
             <div class="hero-actions">
               <a class="btn primary" href="#saison">Découvrir notre saison</a>
@@ -55,8 +58,8 @@
             </div>
             <div class="stats">
               <div>
-                <p class="stat-value">1</p>
-                <p class="stat-label">Titre régional (Marnaz)</p>
+                <p class="stat-value">2ᵉ</p>
+                <p class="stat-label">Régional (Marnaz)</p>
               </div>
               <div>
                 <p class="stat-value">STI2D</p>
@@ -70,7 +73,7 @@
           </div>
           <div class="hero-visual">
             <div class="hex-panel">
-              <img src="assets/logo.png" alt="Emblème MecaBees" />
+              <img src="assets/logo.png" alt="Emblème MecaBees" width="220" height="220" decoding="async" />
             </div>
             <div class="hero-card">
               <p class="hero-card-title">Notre ADN</p>
@@ -91,7 +94,7 @@
             <h3>Former, expérimenter, inspirer.</h3>
             <p>
               MecaBees est une équipe qui change chaque année au Lycée Charles Poncet à Cluse.
-              On partage nos connaissances entre promotions, on conçoit un robot performant, et on apprend
+              Nous partageons nos connaissances entre promotions, nous concevons un robot performant, et nous apprenons
               à travailler comme une vraie équipe d’ingénierie.
             </p>
           </div>
@@ -119,7 +122,8 @@
             <h3>Du premier prototype à la LDLC Arena.</h3>
             <p>
               Nous travaillons sur le robot depuis septembre 2025. La compétition régionale de Marnaz a eu lieu le 31 janvier 2026,
-              et la finale se tiendra le 21 mars 2026 à la LDLC Arena de Lyon.
+              et la finale se tiendra le 21 mars 2026 à la LDLC Arena de Lyon. Nous avons terminé 2ᵉ à Marnaz, ce qui nous qualifie
+              pour la finale.
             </p>
           </div>
           <div class="timeline">
@@ -131,7 +135,7 @@
             <div class="timeline-item">
               <span class="timeline-date">31 janvier 2026</span>
               <h4>Compétition régionale — Marnaz</h4>
-              <p>Victoire régionale et qualification pour la finale FTC à Lyon.</p>
+              <p>2ᵉ place et qualification pour la finale FTC à Lyon.</p>
             </div>
             <div class="timeline-item">
               <span class="timeline-date">Février 2026</span>
@@ -151,7 +155,7 @@
         <div class="container">
           <div class="section-header">
             <p class="eyebrow">Palmarès</p>
-            <h3>Des compétitions gagnées, une histoire qui continue.</h3>
+            <h3>Des compétitions marquantes, une histoire qui continue.</h3>
             <p>
               Cette page est faite pour durer : chaque promotion ajoute ses victoires et ses moments forts.
             </p>
@@ -159,13 +163,13 @@
           <div class="palmares-grid">
             <div class="palmares-card">
               <p class="palmares-year">2025/2026</p>
-              <h4>Champion régional — Marnaz</h4>
-              <p>Victoire régionale FTC et qualification pour la finale à Lyon.</p>
+              <h4>Régional de Marnaz — 2ᵉ place</h4>
+              <p>Qualification pour la finale FTC à Lyon (LDLC Arena).</p>
             </div>
             <div class="palmares-card">
-              <p class="palmares-year">2025/2026</p>
-              <h4>Finale FTC — Lyon</h4>
-              <p>Qualifiés pour représenter Cluse sur la grande scène.</p>
+              <p class="palmares-year">2024/2025</p>
+              <h4>Qualification à Marnaz</h4>
+              <p>Qualification pour Lyon, sans qualification pour l’étape suivante.</p>
             </div>
             <div class="palmares-card">
               <p class="palmares-year">À venir</p>
@@ -218,31 +222,31 @@
           </div>
           <div class="sponsor-grid">
             <div class="sponsor-card">
-              <img src="assets/actemuim.jpg" alt="Sponsor Actemuim" />
+              <img src="assets/actemuim.jpg" alt="Sponsor Actemuim" loading="lazy" decoding="async" width="200" height="120" />
             </div>
             <div class="sponsor-card">
-              <img src="assets/dvg.jpg" alt="Sponsor DVG" />
+              <img src="assets/dvg.jpg" alt="Sponsor DVG" loading="lazy" decoding="async" width="200" height="120" />
             </div>
             <div class="sponsor-card">
-              <img src="assets/firsttech.jpg" alt="Sponsor First Tech Challenge" />
+              <img src="assets/firsttech.jpg" alt="Sponsor First Tech Challenge" loading="lazy" decoding="async" width="200" height="120" />
             </div>
             <div class="sponsor-card">
-              <img src="assets/Logo%20AAAE.gif" alt="Sponsor AAAE" />
+              <img src="assets/Logo%20AAAE.gif" alt="Sponsor AAAE" loading="lazy" decoding="async" width="200" height="120" />
             </div>
             <div class="sponsor-card">
-              <img src="assets/logo%20lyc%C3%A9e.png" alt="Sponsor Lycée" />
+              <img src="assets/logo%20lyc%C3%A9e.png" alt="Sponsor Lycée" loading="lazy" decoding="async" width="200" height="120" />
             </div>
             <div class="sponsor-card">
-              <img src="assets/logo-aura-rvb_bleu2.jpg" alt="Sponsor Auvergne-Rhone-Alpes" />
+              <img src="assets/logo-aura-rvb_bleu2.jpg" alt="Sponsor Auvergne-Rhone-Alpes" loading="lazy" decoding="async" width="200" height="120" />
             </div>
             <div class="sponsor-card">
-              <img src="assets/logos_CMQX_mecanique_connectee_Auvergne_Rhone_Alpes.jpg" alt="Sponsor CMQX Mecanique Connectee" />
+              <img src="assets/logos_CMQX_mecanique_connectee_Auvergne_Rhone_Alpes.jpg" alt="Sponsor CMQX Mecanique Connectee" loading="lazy" decoding="async" width="200" height="120" />
             </div>
             <div class="sponsor-card">
-              <img src="assets/ostheo.png" alt="Sponsor Ostheo" />
+              <img src="assets/ostheo.png" alt="Sponsor Ostheo" loading="lazy" decoding="async" width="200" height="120" />
             </div>
             <div class="sponsor-card">
-              <img src="assets/rs.jpg" alt="Sponsor RS" />
+              <img src="assets/rs.jpg" alt="Sponsor RS" loading="lazy" decoding="async" width="200" height="120" />
             </div>
           </div>
         </div>
