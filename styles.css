@@ -319,6 +319,32 @@ img {
   border-top: 4px solid var(--yellow);
 }
 
+.sponsors {
+  background: var(--white);
+}
+
+.sponsor-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 18px;
+  align-items: center;
+}
+
+.sponsor-card {
+  background: var(--smoke);
+  padding: 18px;
+  border-radius: var(--radius-sm);
+  display: grid;
+  place-items: center;
+  min-height: 120px;
+  box-shadow: var(--shadow-soft);
+}
+
+.sponsor-card img {
+  max-height: 70px;
+  object-fit: contain;
+}
+
 .contact {
   background: linear-gradient(130deg, rgba(255, 191, 47, 0.25), rgba(255, 255, 255, 0.6));
 }
