@@ -319,6 +319,32 @@ img {
   border-top: 4px solid var(--yellow);
 }
 
+.palmares {
+  background: var(--cream);
+}
+
+.palmares-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 18px;
+}
+
+.palmares-card {
+  background: var(--white);
+  padding: 24px;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-soft);
+  border-left: 6px solid var(--yellow);
+}
+
+.palmares-year {
+  font-size: 0.8rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--steel);
+  margin-bottom: 10px;
+}
+
 .sponsors {
   background: var(--white);
 }
