@@ -4,6 +4,7 @@ const nav = document.querySelector(".nav");
 const lightbox = document.querySelector(".lightbox");
 const lightboxImage = document.querySelector(".lightbox-image");
 const lightboxClose = document.querySelector(".lightbox-close");
+const contactForm = document.querySelector(".contact-form");
 
 const observer = new IntersectionObserver(
   (entries) => {
@@ -77,6 +78,56 @@ if (lightbox && lightboxImage && lightboxClose) {
   window.addEventListener("keydown", (event) => {
     if (event.key === "Escape") {
       closeLightbox();
+    }
+  });
+}
+
+if (contactForm) {
+  const statusMessage = contactForm.querySelector(".form-status");
+  const submitButton = contactForm.querySelector('button[type="submit"]');
+
+  contactForm.addEventListener("submit", async (event) => {
+    event.preventDefault();
+
+    const formData = new FormData(contactForm);
+
+    if (statusMessage) {
+      statusMessage.textContent = "Envoi en cours...";
+      statusMessage.classList.remove("is-success", "is-error");
+    }
+
+    if (submitButton) {
+      submitButton.disabled = true;
+    }
+
+    try {
+      const response = await fetch(contactForm.action, {
+        method: contactForm.method,
+        body: formData,
+        headers: {
+          Accept: "application/json",
+        },
+      });
+
+      if (!response.ok) {
+        throw new Error("Form submission failed");
+      }
+
+      contactForm.reset();
+
+      if (statusMessage) {
+        statusMessage.textContent = "Votre demande a ete envoyee, nous vous recontacterons par mail bientot.";
+        statusMessage.classList.add("is-success");
+      }
+    } catch (error) {
+      if (statusMessage) {
+        statusMessage.textContent = "L'envoi a echoue. Merci de reessayer dans un instant.";
+        statusMessage.classList.add("is-error");
+      }
+    } finally {
+      if (submitButton) {
+        submitButton.disabled = false;
+      }
     }
   });
 }
